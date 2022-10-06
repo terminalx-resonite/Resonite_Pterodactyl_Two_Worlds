@@ -1,0 +1,37 @@
+{
+    "Steam/steamapps/common/NeosVR/Config/Config.json": {
+        "parser": "json",
+        "find": {
+            "loginCredential": "{{server.build.env.HEADLESS_EMAIL}}",
+            "loginPassword": "{{server.build.env.HEADLESS_PASS}}",
+            "maxConcurrentAssetTransfers": "{{server.build.env.CONCURRENT_TRANSFERS}}",
+            "startWorlds[0].sessionName": "{{server.build.env.W1_SESSION_NAME}}",
+            "startWorlds[0].customSessionId": "{{server.build.env.W1_SESSION_ID}}",
+            "startWorlds[0].description": "{{server.build.env.W1_SESSION_DESCRIPTION}}",
+            "startWorlds[0].loadWorldURL": "{{server.build.env.W1_WORLD_URL}}",
+            "startWorlds[0].accessLevel": "{{server.build.env.W1_ACCESS_LEVEL}}",
+            "startWorlds[0].idleRestartInterval": "{{server.build.env.W1_IDLE_RESTART_INTERVAL}}",
+            "startWorlds[0].roleCloudVariable": "{{server.build.env.W1_ROLE_CLOUD_VARIABLE}}",
+            "startWorlds[0].allowUserCloudVariable": "{{server.build.env.W1_ALLOW_USER_CLOUD_VARIABLE}}",
+            "startWorlds[0].hideFromPublicListing": "{{server.build.env.W1_HIDDEN}}",
+            "startWorlds[0].maxUsers": "{{server.build.env.W1_MAXUSERS}}",
+            "startWorlds[0].awayKickMinutes": "{{server.build.env.W1_AFKTIMEOUT}}",
+            "startWorlds[0].requiredUserJoinCloudVariable": "{{server.build.env.W1_REQUIRED_USER_JOIN_CLOUD_VARIABLE}}",
+            "startWorlds[0].requiredUserJoinCloudVariableDenyMessage": "{{server.build.env.W1_REQUIRED_USER_DENY_MESSAGE}}",
+            "startWorlds[1].isEnabled": "{{server.build.env.W2_ENABLED}}",
+            "startWorlds[1].sessionName": "{{server.build.env.W2_SESSION_NAME}}",
+            "startWorlds[1].customSessionId": "{{server.build.env.W2_SESSION_ID}}",
+            "startWorlds[1].description": "{{server.build.env.W2_SESSION_DESCRIPTION}}",
+            "startWorlds[1].loadWorldURL": "{{server.build.env.W2_WORLD_URL}}",
+            "startWorlds[1].accessLevel": "{{server.build.env.W2_ACCESS_LEVEL}}",
+            "startWorlds[1].idleRestartInterval": "{{server.build.env.W2_IDLE_RESTART_INTERVAL}}",
+            "startWorlds[1].roleCloudVariable": "{{server.build.env.W2_ROLE_CLOUD_VARIABLE}}",
+            "startWorlds[1].allowUserCloudVariable": "{{server.build.env.W2_ALLOW_USER_CLOUD_VARIABLE}}",
+            "startWorlds[1].hideFromPublicListing": "{{server.build.env.W2_HIDDEN}}",
+            "startWorlds[1].maxUsers": "{{server.build.env.W2_MAXUSERS}}",
+            "startWorlds[1].awayKickMinutes": "{{server.build.env.W2_AFKTIMEOUT}}",
+            "startWorlds[1].requiredUserJoinCloudVariable": "{{server.build.env.W2_REQUIRED_USER_JOIN_CLOUD_VARIABLE}}",
+            "startWorlds[1].requiredUserJoinCloudVariableDenyMessage": "{{server.build.env.W2_REQUIRED_USER_DENY_MESSAGE}}"
+        }
+    }
+}
