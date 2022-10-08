@@ -10,7 +10,7 @@
     "description": null,
     "features": null,
     "docker_images": {
-        "ghcr.io\/OfficialR3ido101/neosvr-headless2worlds:master": "ghcr.io\/neosvr-community-projects\/neosvr-pterodactyl:master"
+        "ghcr.io\/terminalx-neos\/neosvr-headless2worlds:master": "ghcr.io\/terminalx-neos\/neosvr-headless2worlds:master"
     },
     "file_denylist": [],
     "startup": "mono Neos.exe",
