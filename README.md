@@ -1,9 +1,11 @@
+[![Docker](https://github.com/terminalx-neos/neosvr-headless2worlds/actions/workflows/docker-publish.yml/badge.svg?branch=master)](https://github.com/terminalx-neos/neosvr-headless2worlds/actions/workflows/docker-publish.yml)
+
 # neosvr-headless
 Docker image for Pterodactyl NeosVR headless server.
 
 ### Simple setup
 
-Import egg-single-session.json for a starting point with a single session setup. 
+Import egg-duel-session.json for a starting point with a single session setup. 
 
 ### Or if you prefer to build the egg yourself:
 
