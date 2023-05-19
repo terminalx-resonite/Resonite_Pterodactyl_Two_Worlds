@@ -4,7 +4,7 @@
         "version": "PTDL_v2",
         "update_url": null
     },
-    "exported_at": "2022-10-05T10:21:01-04:00",
+    "exported_at": "2023-05-19T16:13:10+00:00",
     "name": "NeosVR Server Duel sessions",
     "author": "root@terminalX.me",
     "description": null,
@@ -15,14 +15,14 @@
     "file_denylist": [],
     "startup": "mono Neos.exe",
     "config": {
-        "files": "{\r\n    \"Steam\/steamapps\/common\/NeosVR\/Config\/Config.json\": {\r\n        \"parser\": \"json\",\r\n        \"find\": {\r\n            \"loginCredential\": \"{{server.build.env.HEADLESS_EMAIL}}\",\r\n            \"loginPassword\": \"{{server.build.env.HEADLESS_PASS}}\",\r\n            \"maxConcurrentAssetTransfers\": \"{{server.build.env.CONCURRENT_TRANSFERS}}\",\r\n            \"startWorlds[0].sessionName\": \"{{server.build.env.SESSION_NAME}}\",\r\n            \"startWorlds[0].customSessionId\": \"{{server.build.env.SESSION_ID}}\",\r\n            \"startWorlds[0].description\": \"{{server.build.env.SESSION_DESCRIPTION}}\",\r\n            \"startWorlds[0].loadWorldURL\": \"{{server.build.env.WORLD_URL}}\",\r\n            \"startWorlds[0].accessLevel\": \"{{server.build.env.ACCESS_LEVEL}}\",\r\n            \"startWorlds[0].idleRestartInterval\": \"{{server.build.env.IDLE_RESTART_INTERVAL}}\",\r\n            \"startWorlds[0].roleCloudVariable\": \"{{server.build.env.ROLE_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[0].allowUserCloudVariable\": \"{{server.build.env.ALLOW_USER_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[0].hideFromPublicListing\": \"{{server.build.env.HIDDEN}}\",\r\n            \"startWorlds[0].maxUsers\": \"{{server.build.env.MAXUSERS}}\",\r\n            \"startWorlds[0].awayKickMinutes\": \"{{server.build.env.AFKTIMEOUT}}\"\r\n        }\r\n    }\r\n}",
+        "files": "{\r\n    \"Steam\/steamapps\/common\/NeosVR\/Config\/Config.json\": {\r\n        \"parser\": \"json\",\r\n        \"find\": {\r\n            \"loginCredential\": \"{{server.build.env.HEADLESS_EMAIL}}\",\r\n            \"loginPassword\": \"{{server.build.env.HEADLESS_PASS}}\",\r\n            \"usernameOverride\": \"{{server.build.env.CUSTOM_USERNAME}}\",\r\n            \"maxConcurrentAssetTransfers\": \"{{server.build.env.CONCURRENT_TRANSFERS}}\",\r\n            \"startWorlds[0].sessionName\": \"{{server.build.env.W1_SESSION_NAME}}\",\r\n            \"startWorlds[0].customSessionId\": \"{{server.build.env.W1_SESSION_ID}}\",\r\n            \"startWorlds[0].description\": \"{{server.build.env.W1_SESSION_DESCRIPTION}}\",\r\n            \"startWorlds[0].loadWorldURL\": \"{{server.build.env.W1_WORLD_URL}}\",\r\n            \"startWorlds[0].accessLevel\": \"{{server.build.env.W1_ACCESS_LEVEL}}\",\r\n            \"startWorlds[0].idleRestartInterval\": \"{{server.build.env.W1_IDLE_RESTART_INTERVAL}}\",\r\n            \"startWorlds[0].roleCloudVariable\": \"{{server.build.env.W1_ROLE_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[0].allowUserCloudVariable\": \"{{server.build.env.W1_ALLOW_USER_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[0].hideFromPublicListing\": \"{{server.build.env.W1_HIDDEN}}\",\r\n            \"startWorlds[0].maxUsers\": \"{{server.build.env.W1_MAXUSERS}}\",\r\n            \"startWorlds[0].awayKickMinutes\": \"{{server.build.env.W1_AFKTIMEOUT}}\",\r\n            \"startWorlds[0].requiredUserJoinCloudVariable\": \"{{server.build.env.W1_REQUIRED_USER_JOIN_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[0].requiredUserJoinCloudVariableDenyMessage\": \"{{server.build.env.W1_REQUIRED_USER_DENY_MESSAGE}}\",\r\n            \"startWorlds[1].isEnabled\": \"{{server.build.env.W2_ENABLED}}\",\r\n            \"startWorlds[1].sessionName\": \"{{server.build.env.W2_SESSION_NAME}}\",\r\n            \"startWorlds[1].customSessionId\": \"{{server.build.env.W2_SESSION_ID}}\",\r\n            \"startWorlds[1].description\": \"{{server.build.env.W2_SESSION_DESCRIPTION}}\",\r\n            \"startWorlds[1].loadWorldURL\": \"{{server.build.env.W2_WORLD_URL}}\",\r\n            \"startWorlds[1].accessLevel\": \"{{server.build.env.W2_ACCESS_LEVEL}}\",\r\n            \"startWorlds[1].idleRestartInterval\": \"{{server.build.env.W2_IDLE_RESTART_INTERVAL}}\",\r\n            \"startWorlds[1].roleCloudVariable\": \"{{server.build.env.W2_ROLE_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[1].allowUserCloudVariable\": \"{{server.build.env.W2_ALLOW_USER_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[1].hideFromPublicListing\": \"{{server.build.env.W2_HIDDEN}}\",\r\n            \"startWorlds[1].maxUsers\": \"{{server.build.env.W2_MAXUSERS}}\",\r\n            \"startWorlds[1].awayKickMinutes\": \"{{server.build.env.W2_AFKTIMEOUT}}\",\r\n            \"startWorlds[1].requiredUserJoinCloudVariable\": \"{{server.build.env.W2_REQUIRED_USER_JOIN_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[1].requiredUserJoinCloudVariableDenyMessage\": \"{{server.build.env.W2_REQUIRED_USER_DENY_MESSAGE}}\"\r\n        }\r\n    }\r\n}",
         "startup": "{\r\n    \"done\": \"Starting running world:\"\r\n}",
         "logs": "{}",
         "stop": "shutdown"
     },
     "scripts": {
         "installation": {
-            "script": "#!\/bin\/bash\r\n# steamcmd Base Installation Script\r\n#\r\n# Server Files: \/mnt\/server\r\n\r\nSRCDS_APPID=740250\r\n\r\nif [ \"${STEAM_USER}\" == \"\" ]; then\r\n    echo -e \"steam user is not set.\\n\"\r\n    exit 1\r\nelse\r\n    echo -e \"user set to ${STEAM_USER}\"\r\nfi\r\n\r\ncd \/tmp\r\nmkdir -p \/mnt\/server\/steamcmd\r\ncurl -sSL -o steamcmd.tar.gz https:\/\/steamcdn-a.akamaihd.net\/client\/installer\/steamcmd_linux.tar.gz\r\ntar -xzvf steamcmd.tar.gz -C \/mnt\/server\/steamcmd\r\ncd \/mnt\/server\/steamcmd\r\n\r\nchown -R root:root \/mnt\r\nexport HOME=\/mnt\/server\r\n\r\n.\/steamcmd.sh +login ${STEAM_USER} ${STEAM_PASS} ${STEAM_AUTH} +app_license_request ${STEAMAPPID} +app_update ${SRCDS_APPID} -beta ${STEAMBETA} -betapassword ${STEAMBETAPASSWORD} validate +quit\r\n\r\ncd ~\/\r\n\r\nexport STEAMAPPDIR=Steam\/steamapps\/common\/NeosVR\r\n\r\nmkdir ${STEAMAPPDIR}\/Config\r\n\r\ncurl -sSL -o ${STEAMAPPDIR}\/Config\/Config.json \"https:\/\/raw.githubusercontent.com\/NeosVR-Community-Projects\/neosvr-pterodactyl\/master\/Config.json\"\r\n\r\necho \"done\"",
+            "script": "#!\/bin\/bash\r\n# steamcmd Base Installation Script\r\n#\r\n# Server Files: \/mnt\/server\r\n\r\nSRCDS_APPID=740250\r\n\r\nif [ \"${STEAM_USER}\" == \"\" ]; then\r\n    echo -e \"steam user is not set.\\n\"\r\n    exit 1\r\nelse\r\n    echo -e \"user set to ${STEAM_USER}\"\r\nfi\r\n\r\ncd \/tmp\r\nmkdir -p \/mnt\/server\/steamcmd\r\ncurl -sSL -o steamcmd.tar.gz https:\/\/steamcdn-a.akamaihd.net\/client\/installer\/steamcmd_linux.tar.gz\r\ntar -xzvf steamcmd.tar.gz -C \/mnt\/server\/steamcmd\r\ncd \/mnt\/server\/steamcmd\r\n\r\nchown -R root:root \/mnt\r\nexport HOME=\/mnt\/server\r\n\r\n.\/steamcmd.sh +login ${STEAM_USER} ${STEAM_PASS} ${STEAM_AUTH} +app_license_request ${STEAMAPPID} +app_update ${SRCDS_APPID} -beta ${STEAMBETA} -betapassword ${STEAMBETAPASSWORD} validate +quit\r\n\r\ncd ~\/\r\n\r\nexport STEAMAPPDIR=Steam\/steamapps\/common\/NeosVR\r\n\r\nmkdir ${STEAMAPPDIR}\/Config\r\n\r\ncurl -sSL -o ${STEAMAPPDIR}\/Config\/Config.json \"https:\/\/raw.githubusercontent.com\/terminalx-neos\/neosvr-headless2worlds\/master\/Config.json\"\r\n\r\necho \"done\"",
             "container": "ghcr.io\/pterodactyl\/installers:debian",
             "entrypoint": "bash"
         }
@@ -379,13 +379,23 @@
             "field_type": "text"
         },
         {
-            "name": "World 2 Enabled/Disabled",
+            "name": "World 2 Enabled\/Disabled",
             "description": "",
             "env_variable": "W2_ENABLED",
             "default_value": "1",
             "user_viewable": true,
             "user_editable": true,
             "rules": "required|boolean",
+            "field_type": "text"
+        },
+        {
+            "name": "Custom Username",
+            "description": "Sets custom name for neos headless.",
+            "env_variable": "CUSTOM_USERNAME",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:50|nullable",
             "field_type": "text"
         }
     ]
