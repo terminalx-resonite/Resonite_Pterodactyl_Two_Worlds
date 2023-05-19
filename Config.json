@@ -80,5 +80,5 @@
   ],
   "tickRate": 60,
   "universeId": null,
-  "usernameOverride": null
+  "usernameOverride": "CUSTOM_USERNAME"
 }
