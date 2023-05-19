@@ -4,6 +4,7 @@
         "find": {
             "loginCredential": "{{server.build.env.HEADLESS_EMAIL}}",
             "loginPassword": "{{server.build.env.HEADLESS_PASS}}",
+            "usernameOverride": "{{server.build.env.CUSTOM_USERNAME}}",
             "maxConcurrentAssetTransfers": "{{server.build.env.CONCURRENT_TRANSFERS}}",
             "startWorlds[0].sessionName": "{{server.build.env.W1_SESSION_NAME}}",
             "startWorlds[0].customSessionId": "{{server.build.env.W1_SESSION_ID}}",
