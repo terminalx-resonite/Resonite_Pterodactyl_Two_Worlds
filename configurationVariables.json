@@ -1,11 +1,12 @@
 {
-    "Steam/steamapps/common/NeosVR/Config/Config.json": {
+    "Steam/steamapps/common/Resonite/Headless/Config/Config.json": {
         "parser": "json",
         "find": {
             "loginCredential": "{{server.build.env.HEADLESS_EMAIL}}",
             "loginPassword": "{{server.build.env.HEADLESS_PASS}}",
             "usernameOverride": "{{server.build.env.CUSTOM_USERNAME}}",
             "maxConcurrentAssetTransfers": "{{server.build.env.CONCURRENT_TRANSFERS}}",
+            "startWorlds[0].isEnabled": "{{server.build.env.W1_ENABLED}}",
             "startWorlds[0].sessionName": "{{server.build.env.W1_SESSION_NAME}}",
             "startWorlds[0].customSessionId": "{{server.build.env.W1_SESSION_ID}}",
             "startWorlds[0].description": "{{server.build.env.W1_SESSION_DESCRIPTION}}",
@@ -32,7 +33,35 @@
             "startWorlds[1].maxUsers": "{{server.build.env.W2_MAXUSERS}}",
             "startWorlds[1].awayKickMinutes": "{{server.build.env.W2_AFKTIMEOUT}}",
             "startWorlds[1].requiredUserJoinCloudVariable": "{{server.build.env.W2_REQUIRED_USER_JOIN_CLOUD_VARIABLE}}",
-            "startWorlds[1].requiredUserJoinCloudVariableDenyMessage": "{{server.build.env.W2_REQUIRED_USER_DENY_MESSAGE}}"
+            "startWorlds[1].requiredUserJoinCloudVariableDenyMessage": "{{server.build.env.W2_REQUIRED_USER_DENY_MESSAGE}}",
+            "startWorlds[2].isEnabled": "{{server.build.env.W3_ENABLED}}",
+            "startWorlds[2].sessionName": "{{server.build.env.W3_SESSION_NAME}}",
+            "startWorlds[2].customSessionId": "{{server.build.env.W3_SESSION_ID}}",
+            "startWorlds[2].description": "{{server.build.env.W3_SESSION_DESCRIPTION}}",
+            "startWorlds[2].loadWorldURL": "{{server.build.env.W3_WORLD_URL}}",
+            "startWorlds[2].accessLevel": "{{server.build.env.W3_ACCESS_LEVEL}}",
+            "startWorlds[2].idleRestartInterval": "{{server.build.env.W3_IDLE_RESTART_INTERVAL}}",
+            "startWorlds[2].roleCloudVariable": "{{server.build.env.W3_ROLE_CLOUD_VARIABLE}}",
+            "startWorlds[2].allowUserCloudVariable": "{{server.build.env.W3_ALLOW_USER_CLOUD_VARIABLE}}",
+            "startWorlds[2].hideFromPublicListing": "{{server.build.env.W3_HIDDEN}}",
+            "startWorlds[2].maxUsers": "{{server.build.env.W2_MAXUSERS}}",
+            "startWorlds[2].awayKickMinutes": "{{server.build.env.W3_AFKTIMEOUT}}",
+            "startWorlds[2].requiredUserJoinCloudVariable": "{{server.build.env.W3_REQUIRED_USER_JOIN_CLOUD_VARIABLE}}",
+            "startWorlds[2].requiredUserJoinCloudVariableDenyMessage": "{{server.build.env.W3_REQUIRED_USER_DENY_MESSAGE}}",
+            "startWorlds[3].isEnabled": "{{server.build.env.W4_ENABLED}}",
+            "startWorlds[3].sessionName": "{{server.build.env.W4_SESSION_NAME}}",
+            "startWorlds[3].customSessionId": "{{server.build.env.W4_SESSION_ID}}",
+            "startWorlds[3].description": "{{server.build.env.W4_SESSION_DESCRIPTION}}",
+            "startWorlds[3].loadWorldURL": "{{server.build.env.W4_WORLD_URL}}",
+            "startWorlds[3].accessLevel": "{{server.build.env.W4_ACCESS_LEVEL}}",
+            "startWorlds[3].idleRestartInterval": "{{server.build.env.W4_IDLE_RESTART_INTERVAL}}",
+            "startWorlds[3].roleCloudVariable": "{{server.build.env.W4_ROLE_CLOUD_VARIABLE}}",
+            "startWorlds[3].allowUserCloudVariable": "{{server.build.env.W4_ALLOW_USER_CLOUD_VARIABLE}}",
+            "startWorlds[3].hideFromPublicListing": "{{server.build.env.W4_HIDDEN}}",
+            "startWorlds[3].maxUsers": "{{server.build.env.W4_MAXUSERS}}",
+            "startWorlds[3].awayKickMinutes": "{{server.build.env.W4_AFKTIMEOUT}}",
+            "startWorlds[3].requiredUserJoinCloudVariable": "{{server.build.env.W4_REQUIRED_USER_JOIN_CLOUD_VARIABLE}}",
+            "startWorlds[3].requiredUserJoinCloudVariableDenyMessage": "{{server.build.env.W4_REQUIRED_USER_DENY_MESSAGE}}"
         }
     }
 }

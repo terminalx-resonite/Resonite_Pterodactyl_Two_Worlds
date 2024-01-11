@@ -4,7 +4,7 @@
         "version": "PTDL_v2",
         "update_url": null
     },
-    "exported_at": "2023-10-13T14:50:41-04:00",
+    "exported_at": "2024-01-11T01:38:03+00:00",
     "name": "Resonite Single Session",
     "author": "technical@boltwolf.net",
     "description": null,
@@ -15,7 +15,7 @@
     "file_denylist": [],
     "startup": "mono Resonite.exe",
     "config": {
-        "files": "{\r\n    \"Steam\/steamapps\/common\/Resonite\/Headless\/Config\/Config.json\": {\r\n        \"parser\": \"json\",\r\n        \"find\": {\r\n            \"loginCredential\": \"{{server.build.env.HEADLESS_EMAIL}}\",\r\n            \"loginPassword\": \"{{server.build.env.HEADLESS_PASS}}\",\r\n            \"maxConcurrentAssetTransfers\": \"{{server.build.env.CONCURRENT_TRANSFERS}}\",\r\n            \"startWorlds[0].sessionName\": \"{{server.build.env.SESSION_NAME}}\",\r\n            \"startWorlds[0].customSessionId\": \"{{server.build.env.SESSION_ID}}\",\r\n            \"startWorlds[0].description\": \"{{server.build.env.SESSION_DESCRIPTION}}\",\r\n            \"startWorlds[0].loadWorldURL\": \"{{server.build.env.WORLD_URL}}\",\r\n            \"startWorlds[0].accessLevel\": \"{{server.build.env.ACCESS_LEVEL}}\",\r\n            \"startWorlds[0].idleRestartInterval\": \"{{server.build.env.IDLE_RESTART_INTERVAL}}\",\r\n            \"startWorlds[0].roleCloudVariable\": \"{{server.build.env.ROLE_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[0].allowUserCloudVariable\": \"{{server.build.env.ALLOW_USER_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[0].requiredUserJoinCloudVariable\": \"{{server.build.env.REQUIRED_JOIN_VARIABLE}}\",\r\n            \"startWorlds[0].denyUserCloudVariable\": \"{{server.build.env.DENY_USER_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[0].hideFromPublicListing\": \"{{server.build.env.HIDDEN}}\",\r\n            \"startWorlds[0].maxUsers\": \"{{server.build.env.MAXUSERS}}\",\r\n            \"startWorlds[0].awayKickMinutes\": \"{{server.build.env.AFKTIMEOUT}}\"\r\n        }\r\n    }\r\n}",
+        "files": "{\r\n    \"Steam\/steamapps\/common\/Resonite\/Headless\/Config\/Config.json\": {\r\n        \"parser\": \"json\",\r\n        \"find\": {\r\n            \"loginCredential\": \"{{server.build.env.HEADLESS_EMAIL}}\",\r\n            \"loginPassword\": \"{{server.build.env.HEADLESS_PASS}}\",\r\n            \"usernameOverride\": \"{{server.build.env.CUSTOM_USERNAME}}\",\r\n            \"maxConcurrentAssetTransfers\": \"{{server.build.env.CONCURRENT_TRANSFERS}}\",\r\n            \"startWorlds[0].sessionName\": \"{{server.build.env.W1_SESSION_NAME}}\",\r\n            \"startWorlds[0].customSessionId\": \"{{server.build.env.W1_SESSION_ID}}\",\r\n            \"startWorlds[0].description\": \"{{server.build.env.W1_SESSION_DESCRIPTION}}\",\r\n            \"startWorlds[0].loadWorldURL\": \"{{server.build.env.W1_WORLD_URL}}\",\r\n            \"startWorlds[0].accessLevel\": \"{{server.build.env.W1_ACCESS_LEVEL}}\",\r\n            \"startWorlds[0].idleRestartInterval\": \"{{server.build.env.W1_IDLE_RESTART_INTERVAL}}\",\r\n            \"startWorlds[0].roleCloudVariable\": \"{{server.build.env.W1_ROLE_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[0].allowUserCloudVariable\": \"{{server.build.env.W1_ALLOW_USER_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[0].hideFromPublicListing\": \"{{server.build.env.W1_HIDDEN}}\",\r\n            \"startWorlds[0].maxUsers\": \"{{server.build.env.W1_MAXUSERS}}\",\r\n            \"startWorlds[0].awayKickMinutes\": \"{{server.build.env.W1_AFKTIMEOUT}}\",\r\n            \"startWorlds[0].requiredUserJoinCloudVariable\": \"{{server.build.env.W1_REQUIRED_USER_JOIN_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[0].requiredUserJoinCloudVariableDenyMessage\": \"{{server.build.env.W1_REQUIRED_USER_DENY_MESSAGE}}\",\r\n            \"startWorlds[1].isEnabled\": \"{{server.build.env.W2_ENABLED}}\",\r\n            \"startWorlds[1].sessionName\": \"{{server.build.env.W2_SESSION_NAME}}\",\r\n            \"startWorlds[1].customSessionId\": \"{{server.build.env.W2_SESSION_ID}}\",\r\n            \"startWorlds[1].description\": \"{{server.build.env.W2_SESSION_DESCRIPTION}}\",\r\n            \"startWorlds[1].loadWorldURL\": \"{{server.build.env.W2_WORLD_URL}}\",\r\n            \"startWorlds[1].accessLevel\": \"{{server.build.env.W2_ACCESS_LEVEL}}\",\r\n            \"startWorlds[1].idleRestartInterval\": \"{{server.build.env.W2_IDLE_RESTART_INTERVAL}}\",\r\n            \"startWorlds[1].roleCloudVariable\": \"{{server.build.env.W2_ROLE_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[1].allowUserCloudVariable\": \"{{server.build.env.W2_ALLOW_USER_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[1].hideFromPublicListing\": \"{{server.build.env.W2_HIDDEN}}\",\r\n            \"startWorlds[1].maxUsers\": \"{{server.build.env.W2_MAXUSERS}}\",\r\n            \"startWorlds[1].awayKickMinutes\": \"{{server.build.env.W2_AFKTIMEOUT}}\",\r\n            \"startWorlds[1].requiredUserJoinCloudVariable\": \"{{server.build.env.W2_REQUIRED_USER_JOIN_CLOUD_VARIABLE}}\",\r\n            \"startWorlds[1].requiredUserJoinCloudVariableDenyMessage\": \"{{server.build.env.W2_REQUIRED_USER_DENY_MESSAGE}}\"\r\n        }\r\n    }\r\n}",
         "startup": "{\r\n    \"done\": \"Starting running world:\"\r\n}",
         "logs": "{}",
         "stop": "shutdown"
@@ -69,6 +69,26 @@
             "field_type": "text"
         },
         {
+            "name": "Session Name World 3",
+            "description": "",
+            "env_variable": "W3_SESSION_NAME",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:200",
+            "field_type": "text"
+        },
+        {
+            "name": "Session Name World 4",
+            "description": "",
+            "env_variable": "W4_SESSION_NAME",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:200",
+            "field_type": "text"
+        },
+        {
             "name": "World Record URL World 1",
             "description": "",
             "env_variable": "W1_WORLD_URL",
@@ -89,6 +109,26 @@
             "field_type": "text"
         },
         {
+            "name": "World Record URL World 3",
+            "description": "",
+            "env_variable": "W3_WORLD_URL",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:200",
+            "field_type": "text"
+        },
+        {
+            "name": "World Record URL World 4",
+            "description": "",
+            "env_variable": "W4_WORLD_URL",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:200",
+            "field_type": "text"
+        },
+        {
             "name": "Access Level World 1",
             "description": "",
             "env_variable": "W1_ACCESS_LEVEL",
@@ -102,6 +142,26 @@
             "name": "Access Level World 2",
             "description": "",
             "env_variable": "W2_ACCESS_LEVEL",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "Access Level World 3",
+            "description": "",
+            "env_variable": "W3_ACCESS_LEVEL",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "Access Level World 4",
+            "description": "",
+            "env_variable": "W4_ACCESS_LEVEL",
             "default_value": "",
             "user_viewable": true,
             "user_editable": true,
@@ -179,6 +239,26 @@
             "field_type": "text"
         },
         {
+            "name": "Session description World 3",
+            "description": "",
+            "env_variable": "W3_SESSION_DESCRIPTION",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|max:800|nullable",
+            "field_type": "text"
+        },
+        {
+            "name": "Session description World 4",
+            "description": "",
+            "env_variable": "W4_SESSION_DESCRIPTION",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|max:800|nullable",
+            "field_type": "text"
+        },
+        {
             "name": "Idle restart interval world 1",
             "description": "seconds (21600 is 6 hours)",
             "env_variable": "W1_IDLE_RESTART_INTERVAL",
@@ -192,6 +272,26 @@
             "name": "Idle restart interval world 2",
             "description": "seconds (21600 is 6 hours)",
             "env_variable": "W2_IDLE_RESTART_INTERVAL",
+            "default_value": "21600",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "integer|max:604800",
+            "field_type": "text"
+        },
+        {
+            "name": "Idle restart interval world 3",
+            "description": "seconds (21600 is 6 hours)",
+            "env_variable": "W1_IDLE_RESTART_INTERVAL",
+            "default_value": "21600",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "integer|max:604800",
+            "field_type": "text"
+        },
+        {
+            "name": "Idle restart interval world 4",
+            "description": "seconds (21600 is 6 hours)",
+            "env_variable": "W4_IDLE_RESTART_INTERVAL",
             "default_value": "21600",
             "user_viewable": true,
             "user_editable": true,
@@ -219,6 +319,26 @@
             "field_type": "text"
         },
         {
+            "name": "User roles cloud variable world 3",
+            "description": "",
+            "env_variable": "W3_ROLE_CLOUD_VARIABLE",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|max:100|nullable",
+            "field_type": "text"
+        },
+        {
+            "name": "User roles cloud variable world 4",
+            "description": "",
+            "env_variable": "W4_ROLE_CLOUD_VARIABLE",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|max:100|nullable",
+            "field_type": "text"
+        },
+        {
             "name": "Join override cloud variable world 1",
             "description": "",
             "env_variable": "W1_ALLOW_USER_CLOUD_VARIABLE",
@@ -232,6 +352,26 @@
             "name": "Join override cloud variable world 2",
             "description": "",
             "env_variable": "W2_ALLOW_USER_CLOUD_VARIABLE",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|max:100|nullable",
+            "field_type": "text"
+        },
+        {
+            "name": "Join override cloud variable world 3",
+            "description": "",
+            "env_variable": "W1_ALLOW_USER_CLOUD_VARIABLE",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|max:100|nullable",
+            "field_type": "text"
+        },
+        {
+            "name": "Join override cloud variable world 4",
+            "description": "",
+            "env_variable": "W4_ALLOW_USER_CLOUD_VARIABLE",
             "default_value": "",
             "user_viewable": true,
             "user_editable": true,
@@ -259,6 +399,26 @@
             "field_type": "text"
         },
         {
+            "name": "Required user to join cloud variable world 3",
+            "description": "",
+            "env_variable": "W3_REQUIRED_USER_JOIN_CLOUD_VARIABLE",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|max:100|nullable",
+            "field_type": "text"
+        },
+        {
+            "name": "Required user to join cloud variable world 4",
+            "description": "",
+            "env_variable": "W4_REQUIRED_USER_JOIN_CLOUD_VARIABLE",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|max:100|nullable",
+            "field_type": "text"
+        },
+        {
             "name": "Required user deny message world 1",
             "description": "",
             "env_variable": "W1_REQUIRED_USER_DENY_MESSAGE",
@@ -269,9 +429,29 @@
             "field_type": "text"
         },
         {
-            "name": "Required user deny message",
+            "name": "Required user deny message world 2",
             "description": "",
             "env_variable": "W2_REQUIRED_USER_DENY_MESSAGE",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|max:100|nullable",
+            "field_type": "text"
+        },
+        {
+            "name": "Required user deny message world 3",
+            "description": "",
+            "env_variable": "W3_REQUIRED_USER_DENY_MESSAGE",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|max:100|nullable",
+            "field_type": "text"
+        },
+        {
+            "name": "Required user deny message world 4",
+            "description": "",
+            "env_variable": "W4_REQUIRED_USER_DENY_MESSAGE",
             "default_value": "",
             "user_viewable": true,
             "user_editable": true,
@@ -299,6 +479,26 @@
             "field_type": "text"
         },
         {
+            "name": "Session hidden world 3",
+            "description": "",
+            "env_variable": "W3_HIDDEN",
+            "default_value": "0",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|boolean",
+            "field_type": "text"
+        },
+        {
+            "name": "Session hidden world 2",
+            "description": "",
+            "env_variable": "W4_HIDDEN",
+            "default_value": "0",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|boolean",
+            "field_type": "text"
+        },
+        {
             "name": "Max users world 1",
             "description": "",
             "env_variable": "W1_MAXUSERS",
@@ -319,10 +519,30 @@
             "field_type": "text"
         },
         {
+            "name": "Max users world 3",
+            "description": "",
+            "env_variable": "W3_MAXUSERS",
+            "default_value": "12",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|integer|max:32",
+            "field_type": "text"
+        },
+        {
+            "name": "Max users world 2",
+            "description": "",
+            "env_variable": "W4_MAXUSERS",
+            "default_value": "12",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|integer|max:32",
+            "field_type": "text"
+        },
+        {
             "name": "AFK Timeout world 1",
             "description": "",
             "env_variable": "W1_AFKTIMEOUT",
-            "default_value": "5",
+            "default_value": "2",
             "user_viewable": true,
             "user_editable": true,
             "rules": "required|integer|max:30",
@@ -332,7 +552,27 @@
             "name": "AFK Timeout world 2",
             "description": "",
             "env_variable": "W2_AFKTIMEOUT",
-            "default_value": "5",
+            "default_value": "2",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|integer|max:30",
+            "field_type": "text"
+        },
+        {
+            "name": "AFK Timeout world 3",
+            "description": "",
+            "env_variable": "W3_AFKTIMEOUT",
+            "default_value": "2",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|integer|max:30",
+            "field_type": "text"
+        },
+        {
+            "name": "AFK Timeout world 4",
+            "description": "",
+            "env_variable": "W4_AFKTIMEOUT",
+            "default_value": "2",
             "user_viewable": true,
             "user_editable": true,
             "rules": "required|integer|max:30",
@@ -352,6 +592,26 @@
             "name": "Default roles world 2",
             "description": "In the format:\r\n\r\n{\"GrayBoltWolf\":\"Admin\", \"Ralinesh\":\"Builder\"}",
             "env_variable": "W2_DEFAULT_USER_ROLES",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "json|max:800|nullable",
+            "field_type": "text"
+        },
+        {
+            "name": "Default roles world 3",
+            "description": "In the format:\r\n\r\n{\"GrayBoltWolf\":\"Admin\", \"Ralinesh\":\"Builder\"}",
+            "env_variable": "W3_DEFAULT_USER_ROLES",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "json|max:800|nullable",
+            "field_type": "text"
+        },
+        {
+            "name": "Default roles world 4",
+            "description": "In the format:\r\n\r\n{\"GrayBoltWolf\":\"Admin\", \"Ralinesh\":\"Builder\"}",
+            "env_variable": "W4_DEFAULT_USER_ROLES",
             "default_value": "",
             "user_viewable": true,
             "user_editable": true,
@@ -379,9 +639,59 @@
             "field_type": "text"
         },
         {
+            "name": "Session ID world 3",
+            "description": "In the format:\r\n\r\nS-U-User-ID:Session-Name",
+            "env_variable": "W3_SESSION_ID",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|max:200|nullable",
+            "field_type": "text"
+        },
+        {
+            "name": "Session ID world 4",
+            "description": "In the format:\r\n\r\nS-U-User-ID:Session-Name",
+            "env_variable": "W4_SESSION_ID",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|max:200|nullable",
+            "field_type": "text"
+        },   
+        {
+            "name": "World 1 Enabled\/Disabled",
+            "description": "",
+            "env_variable": "W1_ENABLED",
+            "default_value": "0",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|boolean",
+            "field_type": "text"
+        },
+        {
             "name": "World 2 Enabled\/Disabled",
             "description": "",
             "env_variable": "W2_ENABLED",
+            "default_value": "1",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|boolean",
+            "field_type": "text"
+        },
+        {
+            "name": "World 3 Enabled\/Disabled",
+            "description": "",
+            "env_variable": "W3_ENABLED",
+            "default_value": "1",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|boolean",
+            "field_type": "text"
+        },
+        {
+            "name": "World 4 Enabled\/Disabled",
+            "description": "",
+            "env_variable": "W4_ENABLED",
             "default_value": "1",
             "user_viewable": true,
             "user_editable": true,
