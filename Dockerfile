@@ -1,7 +1,11 @@
-FROM mono
+FROM debian:bookworm-slim
 
-RUN	apt-get update && \
-	DEBIAN_FRONTEND=noninteractive apt-get install -y locales jq
+RUN	apt-get -y update && \
+	apt-get -y upgrade
+
+RUN 	apt-get install -y jq curl lib32gcc-s1 libopus-dev libopus0 opus-tools mono-complete
+
+RUN	DEBIAN_FRONTEND=noninteractive apt-get install -y locales
 
 RUN	sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
 	sed -i -e 's/# en_GB.UTF-8 UTF-8/en_GB.UTF-8 UTF-8/' /etc/locale.gen && \
